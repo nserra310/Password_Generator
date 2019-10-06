@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" concent="width=device-width, inital-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Kanit|Ropa+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body class="body bg-light">
+
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">Password Generator</a>
+    </nav>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-8 col-sm-12 mx-auto">
+
+                <div class="content">
+                    <h4>Password Generator</h4>
+                    <br />
+                    <input type="text" id="display">
+                    <br />
+                    <input type="range" min="0" max="50" name="slider" id="slider">
+                    <br />
+                    <button onclick="generate()">Generate Password</button>
+                    <button onclick="copyPassword() ">Copy to Clipboard</button>
+                    <div id="length"></div>
+                </div>
+
+            
+            </div>
+
+            <script src="script.js"></script>
+</body>
+
+
+</html>
